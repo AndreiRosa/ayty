@@ -1,5 +1,4 @@
 # ayty
-Case para a empresa Ayty Tech
 
 No repositório:
 - O arquivo 'queries.sql' contém as queries para fazer os comandos solicitados;
@@ -15,9 +14,4 @@ No repositório:
 - A pasta 'django.test' contém os arquivos:
 	- 'modells.py', o qual cria os modelos para o framework django;
 	- 'crud.py', o qual reliza as operações básicas de banco de dados, porém, utilizando as queries cruas.
-	
-Infelizmente, não consegui realizar este projeto. Uma frustração, pois estava esperançoso com essa vaga.
-De qualquer forma, agradeço a oportunidade e a atenção.
 
-Att,
-Andrei Rosa.

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Andrei Francisco da Rosa</title>
+  <script src="script.py"></script>
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Consultar eventos de um ramal específico</h3>
+
+<div>
+  <form method="POST">
+    <label for="id_extension">ID da extensão</label>
+    <input type="text" id="id_extension" name="id_extension" placeholder="ID da extensão...">
+
+    <p><label for="dt_event">Selecionar horário do evento</label>
+    <input type="datetime-local" id="dt_event" name="dt_event"></p>
+  
+    <a href="/extensionEvent/select_EE"><input type="submit" value="Enviar"></a>
+  </form>
+</div>
+
+</body>
+</html>

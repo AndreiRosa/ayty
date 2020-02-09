@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Andrei Francisco da Rosa</title>
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Criar uma extensão</h3>
+
+<div>
+  <form method="POST">
+    <label for="nm_extension">Número da extensão</label>
+    <input type="text" id="nm_extension" name="nm_extension" placeholder="NNNNNNNNN">
+
+    <p><label for="is_active">Está ativo: </label>
+    <input type="radio" id="is_active1" name="is_active1">Sim
+    <input type="radio" id="is_active0" name="is_active0">Não</p>
+
+    <p><label for="must_record">Deve gravar: </label>
+    <input type="radio" id="must_record1" name="must_record1">Sim
+    <input type="radio" id="must_record0" name="must_record0">Não</p>
+
+    <label for="number_transfer">Número que transferiu</label>
+    <input type="text" id="number_transfer" name="number_transfer" placeholder="NNNNNNNNN">
+
+    <label for="was_exported">Foi exportado: </label>
+    <input type="radio" id="was_exported1" name="was_exported1">Sim
+    <input type="radio" id="was_exported0" name="was_exported0">Não
+  
+    <a href="/"></a><input type="submit" value="Enviar"></a>
+  </form>
+</div>
+
+</body>
+</html>

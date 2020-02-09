@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Andrei Francisco da Rosa</title>
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Atualizar uma chamada</h3>
+
+<div>
+  <form method="POST">
+    <label for="id_call">ID da chamada</label>
+    <input type="text" id="id_call" name="id_call" placeholder="ID da chamada...">
+
+    <label for="dateEvent">Selecionar evento</label>
+    <select id="dateEvent" name="dateEvent">
+      <option value="dt_start">Criada</option>
+      <option value="dt_answer">Atendida</option>
+      <option value="dt_finish">Finalizada</option>
+    </select>
+
+    <p><label for="dt_event">Selecionar horário</label>
+    <input type="datetime-local" id="dt_update" name="dt_update"></p>
+  
+    <a href="/"><input type="submit" value="Enviar"></a>
+  </form>
+</div>
+
+</body>
+</html>

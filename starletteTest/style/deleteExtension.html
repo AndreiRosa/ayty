@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Andrei Francisco da Rosa</title>
+</head>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Deletar uma extensão</h3>
+
+<div>
+  <form method="POST">
+    <label for="id_extension">ID da extensão que deseja deletar</label>
+    <input type="text" id="id_extension" name="id_extension" placeholder="ID da extensão...">
+  
+    <a href="/"><input type="submit" value="Enviar"></a>
+  </form>
+</div>
+
+</body>
+</html>
